@@ -13,7 +13,8 @@
   > Take worrying about dinner every night off of your list with this plan ahead tool. Eat healthier and save money by cooking at home!
 
 ## How to Get Started ##
-  > Put deployed address here
+  > Visit the live site here:
+  > https://meal-preppers.herokuapp.com/
 
 ## Future Development ##
   > Add quantities to the shopping list and remove things like water

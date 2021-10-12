@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-wrapper {
+  background: rgb(244, 255, 253);
+  width: 80%;
+  max-width: 800px;
+  margin: 4em auto;
+  transition: all 0.5s ease;
+}
+
+.modal-header {
+  background: rgb(243, 167, 18);
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-content {
+  padding: 1.5em 1em;
+}
+
+.modal-body {
+  margin-bottom: 1em;
+}
+
+.modal-body input {
+  width: 12em;
+  height: 2.25em;
+  padding: 0.5em;
+}
+
+.modal-footer button {
+  display: block;
+  font-size: 1em;
+  padding: 0.5em 1.8em;
+  background: white;
+  color: rgba(62, 62, 62, 0.9);
+  border: none;
+  outline: 1px solid black;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: .5em;
+}
+
+.modal-backdrop {
+  background: rgba(58, 52, 52, 0.685);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  transition: all 1.3s;
+  left: 0;
+}
+
+.modal-nickname-email,
+.modal-info,
+.modal-top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgba(62, 62, 62, 0.9);
+}
+
+.modal-nickname-email input {
+  height: 2.5em;
+  width: 16em;
+}
+
+.modal-top-info {
+  margin-bottom: .5em;
+}
+
+.modal-info {
+  font-size: .75em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(62, 62, 62, 0.9)
+}
+
+.modal-input {
+  padding: 0.5em;
+}

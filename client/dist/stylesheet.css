@@ -1,0 +1,156 @@
+body {
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(211, 193, 195);
+  color: rgb(7, 2, 13)
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.column-list {
+  columns: 2;
+  margin: 1.25em;
+  list-style: none;
+}
+
+h2 {
+  padding: 0.5em;
+  background-color: rgb(243, 167, 18);
+}
+
+.list-items {
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 0.1em;
+  border: 0.1em solid rgba(241, 247, 237, 0.7);
+  margin: 0.1em;
+  background-color: rgba(241, 247, 237, 0.7);
+  border-radius: 0.1em;
+}
+
+.list-container {
+  max-width: 30vw;
+  height: fit-content;
+  /* border: 0.2em solid gray; */
+  margin: 1em;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flex;
+  width: 65vw;
+  justify-content: center;
+}
+
+.recipe-container {
+  min-width: 40vw;
+  overflow-y: scroll;
+  max-height: 90vh;
+  /* border: 0.2em solid gray; */
+  margin: 1em;
+  margin-left: 0;
+}
+
+.recipe-thumb {
+  width: 10em;
+  height: 10em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.selected-recipe-thumb {
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+  margin-bottom: 0.3em;
+  cursor: pointer;
+}
+
+.ingredients {
+  display: flex;
+}
+
+.recipe-list {
+  width: fit-content;
+  margin: 0.5em;
+  list-style: none;
+}
+
+.recipe-name {
+  font-size: 2.0em;
+  padding: 0.1em;
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5em;
+}
+
+.recipe-tile {
+  display: flex;
+  background-color: rgba(241, 247, 237, 0.7);
+  margin: 0.5em;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.selected-recipe-tile {
+  background-color: rgba(241, 247, 237, 0.7);
+  margin: 0.5em;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.shopping-list {
+  list-style: none;
+  columns: 3;
+  margin: 1em
+}
+
+.select-tile-upper {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.link-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.link-row {
+  padding: 0.4em;
+}
+
+.header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.directions {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+button {
+  width: 9em;
+  height: 3em;
+  font-size: 1em;
+  color: rgb(7, 2, 13);
+  background-color: rgba(241, 247, 237, 0.7);
+}
+
+.logout {
+  cursor: pointer;
+  text-decoration: underline;
+}

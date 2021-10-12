@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/server/index.js",
+    "start": "node backend/server/index.js",
+    "dev-start": "nodemon backend/server/index.js",
     "build": "webpack --mode production",
     "dev-build": "webpack --mode development --watch"
-
   },
   "repository": {
     "type": "git",

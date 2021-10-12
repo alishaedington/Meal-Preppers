@@ -1,13 +1,23 @@
 const { Pool } = require('pg');
 const auth = require('../../config');
+let pool;
 
-const pool = new Pool({
-  user: 'alishaedington',
-  host: 'localhost',
-  database: 'user_recipes',
-  password: auth.PG_PASS,
-  port: 5432,
-});
+if (process.env.DATABASE_URL) {
+  pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
+    }
+  });
+} else {
+  pool = new Pool({
+    user: 'alishaedington',
+    host: 'localhost',
+    database: 'user_recipes',
+    password: auth.PG_PASS,
+    port: 5432,
+  });
+}
 
 pool.connect()
   .then(() => console.log('successfully connected'))

@@ -1,5 +1,5 @@
 const { Pool } = require('pg');
-// const auth = require('../../config');
+const auth = require('../../config'); //uncomment during local dev.
 let pool;
 
 if (process.env.DATABASE_URL) {

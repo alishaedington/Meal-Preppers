@@ -10,6 +10,7 @@ import Cuisines from './Cuisines';
 import RecipeList from './RecipeList';
 import UserRecipeList from './UserRecipeList';
 import ShoppingListModal from './ShoppingListModal';
+import Header from './Header';
 
 export default function App() {
   const [username, setUsername] = useState();
@@ -85,22 +86,7 @@ export default function App() {
     <>
       {showModal ? <div className="modal-backdrop" /> : null}
       {showShoppingModal ? <div className="modal-backdrop" onClick={() => setShowShoppingModal(false)} /> : null}
-      <div className="header">
-        <h1 className="title">Meal Preppers</h1>
-        <button type="button" onClick={() => setDisplayUserRecipes(!displayUserRecipes)}>
-          {displayUserRecipes ? 'Back' : 'Your Recipes'}
-        </button>
-        <button type="button" onClick={() => setShowShoppingModal(true)}>
-          Your Shopping List
-        </button>
-        <span>
-          You are logged in as:
-          <br />
-          {` ${username}`}
-          <br />
-          <span className="logout" onClick={logout}>Logout?</span>
-        </span>
-      </div>
+
       <Context.Provider value={{
         filterRecipesCuisine,
         filterRecipesCategory,
@@ -109,6 +95,8 @@ export default function App() {
         setUsername,
         setShoppingList,
         setShowShoppingModal,
+        setDisplayUserRecipes,
+        logout,
         filtered,
         showModal,
         latestMeals,
@@ -118,11 +106,13 @@ export default function App() {
         userRecipes,
         shoppingList,
         showShoppingModal,
+        displayUserRecipes
       }}
       >
+        <Header />
+        <ShoppingListModal />
+        <Modal />
         <div className="content">
-          <ShoppingListModal />
-          <Modal />
           <div className="list-container">
             <h2>Categories</h2>
             <Categories />

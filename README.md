@@ -21,6 +21,6 @@
   > https://meal-preppers.herokuapp.com/
 
 ## Future Development ##
-  > * Add quantities to the shopping list and remove things like water
-  > * Make shopping list printable and add ability to remove items from list that you already have at home
-  > * Add a calendar feature that will allow you to save recipes for upcoming weeks, and generate a shopping list for each week.
+  > * Add quantities to the shopping list and remove things like water. 
+  > * Make shopping list printable and add ability to remove items from list that you already have at home.
+  > * Add a calendar feature that will allow you to save recipes for upcoming weeks, and generate a shopping list for each week.

@@ -1,5 +1,9 @@
 # Meal-Preppers
 
+## Tech Stack ##
+
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
 ## Meal prepping and shopping made easy ##
   > Quickly and easily plan a week of new, flavorful dishes, and generate a shopping list, all in one place.
 
@@ -17,6 +21,6 @@
   > https://meal-preppers.herokuapp.com/
 
 ## Future Development ##
-  > Add quantities to the shopping list and remove things like water
-  > Make shopping list printable and add ability to remove items from list that you already have at home
-  > Add a calendar feature that will allow you to save recipes for upcoming weeks, and generate a shopping list for each week.
+  > * Add quantities to the shopping list and remove things like water
+  > * Make shopping list printable and add ability to remove items from list that you already have at home
+  > * Add a calendar feature that will allow you to save recipes for upcoming weeks, and generate a shopping list for each week.

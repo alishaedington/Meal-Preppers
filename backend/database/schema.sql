@@ -23,5 +23,3 @@ CREATE TABLE recipes (
 
 CREATE INDEX idx_user_id ON recipes (user_id);
 CREATE INDEX idx_user_name ON users (username);
--- > INSERT INTO joke(joke_text, joke_date, author_id)
--- > VALUES (‘Humpty Dumpty had a great fall.’, ‘1899–03–13’, (SELECT id FROM author WHERE author_name = ‘Famous Anthony’));

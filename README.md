@@ -20,7 +20,18 @@
   > Visit the live site here:
   > https://meal-preppers.herokuapp.com/
 
+  To run locally:
+  > This repo requires node >= 14 and postgres to be installed and running.
+  > 1. Clone the repo onto your local machine
+  > 2. Run `npm install` to install the necessary packages
+  > 3. Make a copy of the `config.example.js` file and name it `config.js`. Fill in the fields. (local dev API_KEY can be set to 1)
+  > 4. Enter into the postgres CLI using `psql postgres`
+  > 5. Create the database using `\i <FULL_PATH_TO_SCHEMA>`
+  > 6. Start the development server using `npm run dev-start`
+  > 7. Start the front end using `npm run dev-build`
+  > 8. Open the application at localhost:3000.
+
 ## Future Development ##
-  > * Add quantities to the shopping list and remove things like water. 
+  > * Add quantities to the shopping list and remove things like water.
   > * Make shopping list printable and add ability to remove items from list that you already have at home.
   > * Add a calendar feature that will allow you to save recipes for upcoming weeks, and generate a shopping list for each week.
